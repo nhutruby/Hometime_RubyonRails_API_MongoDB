@@ -29,7 +29,8 @@ Load data from a thirty party
     rails generate model Reservation code:string start_date:date end_date:date payout_price:bigdecimal localized_description:string adults:integer children:integer infants:integer status:integer security_price:bigdecimal currency:string nights:integer total_price:bigdecimal guests:integer
 
     Code: require and unique
-    3. Write tests for model
+
+    3. Write tests for models
   
     4. Create Reservation controller
   
@@ -38,7 +39,7 @@ Load data from a thirty party
        {POST load, params: payload, return: "true" or errors}
         
         Write Payload, a controller concern for better read
-    5. Write tests for controller
+    5. Write tests for the controller
     
 * How to run the test suite
 
