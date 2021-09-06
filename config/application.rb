@@ -45,7 +45,8 @@ module HometimeRubyonrailsApiMongodb
       g.javascripts = false
       g.helper = false
       g.models = true
-      g.controllers = true
+      g.controller_specs = true
+      g.requests = false
     end
   end
 end

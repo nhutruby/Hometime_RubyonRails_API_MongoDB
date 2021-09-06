@@ -31,7 +31,7 @@ class Reservation
     guest = params[:guest]
     if reservation[:code].present? && guest[:email].present?
       new_guest = Guest.create_with(first_name: guest[:first_name],
-        last_name: guest[:last_name]).find_or_create_by(email: guest[:email])
+        last_name: guest[:last_name], phone: guest[:phone]).find_or_create_by(email: guest[:email])
       new_reservation = Reservation.create_with(guest: new_guest,
         start_date: reservation[:start_date], end_date: reservation[:end_date],
         payout_price: reservation[:payout_price],

@@ -1,24 +1,38 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Load data from a thirty party
 
-Things you may want to cover:
+* Technologies:
 
-* Ruby version
+  Mongodb for good performance
 
-* System dependencies
+  Rubocop to check ruby style
 
-* Configuration
+  Rspec for test
 
-* Database creation
 
-* Database initialization
+* Set up and code
 
+    1. Create the app:
+
+    rails new blog --skip-bundle --skip-active-record --skip-test --skip-system-test --api
+
+    2. Create models
+    
+    rails generate model Guest first_name:string last_name:string email:string phone:array 
+
+    Email: require and unique
+
+    rails generate model Reservation code:string start_date:date end_date:date payout_price:bigdecimal localized_description:string adults:integer children:integer infants:integer status:integer security_price:bigdecimal currency:string nights:integer total_price:bigdecimal guests:integer
+
+    Code: require and unique
+    3. Write tests for model
+  
+    4. Create Reservation controller
+  
+       rails generate controller Reservations load
+    5. Write tests for controller
+    
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    bundle exec rspec
