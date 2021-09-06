@@ -17,7 +17,8 @@ Load data from a thirty party
 
     1. Create the app:
 
-    rails new blog --skip-bundle --skip-active-record --skip-test --skip-system-test --api
+    rails new
+  Hometime_RubyonRails_API_MongoDB --skip-bundle --skip-active-record --skip-test --skip-system-test --api
 
     2. Create models
     
