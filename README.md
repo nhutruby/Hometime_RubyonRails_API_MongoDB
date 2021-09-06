@@ -9,6 +9,8 @@ Load data from a thirty party
   Rubocop to check ruby style
 
   Rspec for test
+  
+  IDE: Rubymine
 
 
 * Set up and code
@@ -31,6 +33,10 @@ Load data from a thirty party
     4. Create Reservation controller
   
        rails generate controller Reservations load
+  
+       {POST load, params: payload, return: "true" or errors}
+        
+        Write Payload, a controller concern for better read
     5. Write tests for controller
     
 * How to run the test suite
