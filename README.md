@@ -36,7 +36,7 @@ Load data from a thirty party
   
        rails generate controller Reservations load
   
-       {POST load, params: payload, return: "true" or errors}
+       {POST load, params: payload, return: "true" or "false"}
         
         Write Payload, a controller concern for better read
     5. Write tests for the controller
