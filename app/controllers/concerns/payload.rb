@@ -4,6 +4,8 @@
 module Payload
   extend ActiveSupport::Concern
 
+  private
+
   def reservation_params(params)
     if params[:payload][:reservation_code].present? && params[:payload][:guest] && params[:payload][:guest][:email].present?
       checked_params = params.require(:payload).permit(:reservation_code, :start_date,
